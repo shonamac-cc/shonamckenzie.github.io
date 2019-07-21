@@ -1,0 +1,85 @@
+html, body{
+font-family: sans-serif;
+background-color: grey;
+}
+
+.nav {
+  height: 250px;
+  background: url(img/Pweem.jpg);
+  text-align: right;
+  padding: 0rem 0.5rem;
+}
+
+a:link, a:visited{
+ background-color: black;
+ color: white;
+ padding: 10px 20px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+}
+
+a:link:hover {
+    opacity: 0.7;
+}
+
+.nav h1, p{
+  text-align: left;
+  color: white;
+}
+
+#about{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "image text";
+  align-items: center;
+  justify-content: center;
+}
+
+#about > img {
+	grid-area: image;
+	max-height: 350px;
+	display: inline;
+}
+
+.main{
+  padding-top: 0.8rem;
+  padding-bottom: 10rem;
+
+}
+
+.footer{
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+
+#interests {
+  padding-top: 0.8rem;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.interest {
+	background: black;
+	color: white;
+	text-align: center;
+	padding: 1.5rem 2rem;
+}
+
+.interest > img {
+	max-height: 300px;
+  max-width: 240px;
+	display: inline;
+  padding-top: 5rem;
+}
